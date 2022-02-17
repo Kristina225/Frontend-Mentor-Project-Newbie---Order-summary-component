@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* TODO
+1. Add body background
+2. Add hover states
+3. Add mobile design
+4. Refactor */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-weight-1: 500;
+  --font-weight-2: 700;
+  --font-weight-3: 900;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-1);
+  margin: 0;
+  height: 100vh;
+  padding: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  box-shadow: 0 4rem 4rem -2rem rgba(13, 48, 189, 0.15);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card__image {
+  width: 100%;
+  display: block;
+  border-radius: 2rem 0 2rem 0;
+}
+
+.card__info {
+  text-align: center;
+  padding: 0 4.8rem 4.8rem 4.8rem;
+}
+
+.card__info--title {
+  font-size: 2.8rem;
+  font-weight: var(--font-weight-3);
+  margin-top: 4.5rem;
+  color: hsl(223, 47%, 23%);
+}
+
+.card__info--description {
+  line-height: 2.6rem;
+  padding: 0 3rem 0 3rem;
+  margin-top: 1.7rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.card__info--plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 2.5rem 2.4rem;
+  border-radius: 1.1rem;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.card__info--plan div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__info--plan div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card__info--plan--icon {
+  margin-right: 2rem;
+}
+
+.card__info--plan--type {
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-3);
+  color: hsl(223, 47%, 23%);
+}
+
+.card__info--plan--price {
+  font-size: 1.6rem;
+  margin-top: 0.6rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.card__info--plan--change {
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-2);
+  line-height: 1.3rem;
+  display: block;
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+  border-bottom: 0.14rem solid hsl(245, 75%, 52%);
+}
+
+.card__info--order {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-3);
+  display: block;
+  width: 100%;
+  margin-top: 3.2rem;
+  padding: 1.5rem 0 1.5rem 0;
+  border-radius: 1.1rem;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 2rem 2rem 0 rgba(56, 42, 225, 0.193);
+  background-color: hsl(245, 75%, 52%);
+}
+
+.card__info--cancel {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-3);
+  display: block;
+  margin-top: 3.2rem;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
