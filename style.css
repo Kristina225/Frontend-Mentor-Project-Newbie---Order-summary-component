@@ -6,6 +6,8 @@
 3. Add mobile design
 4. Refactor */
 
+/* I have extra 4px of height. Maybe they're coming from the font weight which I didn't check. */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,6 +31,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("images/pattern-background-desktop.svg") 0 -150% no-repeat,
+    hsl(225, 100%, 98%);
 }
 
 .card {
@@ -44,7 +48,7 @@ body {
 .card__image {
   width: 100%;
   display: block;
-  border-radius: 2rem 0 2rem 0;
+  border-radius: 2rem 2rem 0 0;
 }
 
 .card__info {
@@ -136,4 +140,64 @@ body {
   margin-top: 3.2rem;
   text-decoration: none;
   color: hsl(224, 23%, 55%);
+}
+
+.card__info--plan--change:hover {
+  color: hsl(245, 83%, 68%);
+  border-bottom: none;
+}
+
+.card__info--order:hover {
+  background-color: hsl(245, 83%, 68%);
+  color: hsl(0, 0%, 100%);
+}
+
+.card__info--cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 420px) {
+  body {
+    background: url("images/pattern-background-mobile.svg") 0% 150% no-repeat,
+      hsl(225, 100%, 98%);
+    font-size: 1.5rem;
+  }
+
+  .card {
+    max-width: 32.7rem;
+  }
+
+  .card__info {
+    padding: 0 2.4rem 3.2rem 2.4rem;
+  }
+
+  .card__info--title {
+    font-size: 2.2rem;
+    margin-top: 3.2rem;
+  }
+
+  .card__info--description {
+    padding: 0;
+    margin: 1.6rem 0.8rem 0 0.8rem;
+    line-height: 2.5rem;
+  }
+
+  .card__info--plan {
+    padding: 1.7rem 1.6rem 1.6rem 1.6rem;
+  }
+
+  .card__info--plan--type,
+  .card__info--plan--price {
+    font-size: 1.4rem;
+  }
+
+  .card__info--plan--change {
+    font-size: 1.3rem;
+  }
+
+  .card__info--plan,
+  .card__info--order,
+  .card__info--cancel {
+    margin-top: 2.4rem;
+  }
 }
