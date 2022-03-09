@@ -31,7 +31,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("images/pattern-background-desktop.svg") 0 -150% no-repeat,
+  background: url("images/pattern-background-desktop.svg") 0% 0% / contain
+      no-repeat,
     hsl(225, 100%, 98%);
 }
 

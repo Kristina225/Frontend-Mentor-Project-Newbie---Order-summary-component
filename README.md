@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-In this challenge I learned the basics of how to work with media queries and how to add multiple backgrounds on a page (e.g. a background image and a background color). I also learned that the flow text-decoration underline in anchor elements is interrupted in letters with descenders (p, g...). I solved this by removing the underline and adding a bottom border.
+In this challenge I learned the basics of how to work with media queries and how to add multiple backgrounds on a page (e.g. a background image and a background color). I also learned that the flow of the text-decoration underline in anchor elements is interrupted in letters with descenders (p, g...). I solved this by removing the underline and adding a bottom border.
 
 ### Continued development
 
