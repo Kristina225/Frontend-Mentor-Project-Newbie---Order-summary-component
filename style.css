@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
-/* TODO
-1. Add body background
-2. Add hover states
-3. Add mobile design
-4. Refactor */
-
-/* I have extra 4px of height. Maybe they're coming from the font weight which I didn't check. */
-
 * {
   box-sizing: border-box;
   margin: 0;
