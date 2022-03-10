@@ -25,7 +25,7 @@ body {
   align-items: center;
   background: url("images/pattern-background-desktop.svg") 0% 0% / contain
       no-repeat,
-    hsl(225, 100%, 98%);
+    hsl(225, 100%, 94%);
 }
 
 .card {
